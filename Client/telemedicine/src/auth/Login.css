@@ -1,0 +1,101 @@
+/* Reset body to ensure no default margins interfere with centering */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-container {
+    /* This ensures the background covers the whole screen */
+    height: 100vh;
+    width: 100vw; 
+    
+    /* Flexbox centering logic */
+    display: flex;
+    align-items: center;     /* Vertical center */
+    justify-content: center;    /* Horizontal center */
+    
+    /* The professional gradient from your reference image */
+    background: linear-gradient(135deg, #a2eacb 0%, #2c7a7b 100%);
+  }
+  
+  .login-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px; /* Slightly rounded as per image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px; /* Standard professional form width */
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    color: #2c7a7b;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input, 
+  .input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box; /* Fixes input overflowing */
+    transition: border-color 0.2s;
+  }
+  
+  .input-group input:focus {
+    border-color: #2c7a7b;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .sign-in-btn {
+    background-color: #1d6b6b;
+    color: white;
+    border: none;
+    padding: 12px 45px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #165354;
+  }
+  
+  .footer-links {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #4a5568;
+  }
+  
+  .link-text {
+    color: #2c7a7b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .link-text:hover {
+    text-decoration: underline;
+  }
